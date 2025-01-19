@@ -30,23 +30,43 @@
         <nav>
             <h1>FreshFit</h1>
             <ul>
-                <li class="inter-headline">Todos</li>
-                <li class="inter-headline">Acessórios</li>
-                <li class="inter-headline">Calçados</li>
-                <li class="inter-headline">Camisetas</li>
+                <li class="inter-headline active" data-category="Todos">Todos</li>
+                <li class="inter-headline" data-category="Acessórios">Acessórios</li>
+                <li class="inter-headline" data-category="Calçados">Calçados</li>
+                <li class="inter-headline" data-category="Camisetas">Camisetas</li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <ul class="products-list"></ul>
+            <p class="empty-products-list d-none inter-title-3">Nenhum produto encontrado.</p>
         </section>
         <aside>
             <form id="search-form">
                 <input class="search-input" id="search" name="search" type="text" placeholder="Digite aqui sua pesquisa">
                 <button class="search-btn" type="submit">Pesquisar</button>
             </form>
-            <div></div>
+            <div class="cart">
+                <h3>Carrinho de compras</h3>
+                <div class="empty-cart">
+                    <h4>Carrinho vazio</h4>
+                    <p>Adicione itens</p>
+                </div>
+                <div class="full-cart d-none">
+                    <ul></ul>
+                    <div class="cart-totalizers">
+                        <div>
+                            <span>Quantidade:</span>
+                            <span class="cart-amount">3</span>
+                        </div>
+                        <div>
+                            <span>Total:</span>
+                            <span class="cart-total">R$ 200,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </aside>
     </main>
 </body>
